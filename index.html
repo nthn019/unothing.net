@@ -3,12 +3,37 @@
         <title>countries</title>
         <meta name="description" content="countries">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            .countries_list {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                font-size:14px;
+            }
 
-        <script src="/countries.json"></script>
-        <script src="/script.js"></script>
+            .countries_list-element {
+                display:block;
+                padding:7px;
+                border:1px solid black;
+                cursor:pointer;
+            }
+
+            .countries_list-element:hover {
+                background-color: black;
+                color: #fff;
+            }
+
+
+        </style>
 
     </head>
     <body>
-        <div class="countries_list"></div>
+        <ul class="countries_list"></ul>
+
+
+        <script src="/script.js"></script>
     </body>
 </html>
